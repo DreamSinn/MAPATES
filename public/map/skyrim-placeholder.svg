@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="base" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1a2b32"/><stop offset="1" stop-color="#253a3b"/></linearGradient>
+    <pattern id="grain" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M4 10 12 5M21 27l8-6M2 31l5-2" stroke="#d7cf9a" stroke-opacity=".08" stroke-width="2"/></pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="13"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#base)"/>
+  <path d="M-30 100 C130 25 226 124 340 73S560 85 675 42s205 98 321 28 160 11 240 0v140c-110 24-163-31-267 19s-201 31-300 26-170-55-274-13-181 25-295-21z" fill="#d4cf9b" fill-opacity=".11" filter="url(#soft)"/>
+  <path d="M-30 620c120-36 187 61 302 4s198-23 301 18 192 54 299-18 189-40 347 3v190H-30z" fill="#0c1822" fill-opacity=".3"/>
+  <g fill="none" stroke="#d8d2a0" stroke-opacity=".18" stroke-width="2">
+    <path d="M42 166c160-93 229 12 355-39s218-16 343 21 247-53 422 3"/><path d="M22 190c170-78 228 18 359-24s221-5 343 31 234-42 438-4"/>
+    <path d="M40 497c163-98 270-44 390 9s193 30 310-19 244-56 421 23"/><path d="M63 523c134-76 259-30 370 19s215 39 322-14 252-55 399 8"/>
+    <path d="M435 56c-38 149-43 231 16 331s37 196-31 358"/><path d="M462 54c-28 151-21 238 30 332s28 200-33 361"/>
+  </g>
+  <g fill="none" stroke="#f0b35b" stroke-opacity=".4" stroke-width="3" stroke-dasharray="8 11">
+    <path d="M92 635C194 577 191 406 355 383s152-133 299-145 174-80 294-81"/>
+    <path d="M170 87c112 70 87 206 220 254s113 190 258 209 201 97 356 116"/>
+  </g>
+  <rect width="1200" height="800" fill="url(#grain)"/>
+  <g fill="#e8e0b0" opacity=".45" font-family="Inter,Arial,sans-serif" font-size="13" letter-spacing="3"><text x="88" y="116">FROSTWATER COAST</text><text x="430" y="198">NORTHERN REACH</text><text x="300" y="405">HIGHLAND SHELF</text><text x="730" y="470">GREENWIND BASIN</text><text x="835" y="670">ASHEN VALLEY</text></g>
+  <g fill="#f0b35b" opacity=".65"><circle cx="112" cy="172" r="2"/><circle cx="248" cy="278" r="2"/><circle cx="958" cy="188" r="2"/><circle cx="1015" cy="704" r="2"/><circle cx="580" cy="688" r="2"/></g>
+  <text x="1130" y="770" text-anchor="end" fill="#f0b35b" opacity=".6" font-family="IBM Plex Mono,monospace" font-size="11" letter-spacing="2">ATLAS / FIELD BASE 01</text>
+</svg>

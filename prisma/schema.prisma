@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model MapRecord {
+  id        String           @id
+  name      String
+  createdAt DateTime         @default(now())
+  locations LocationRecord[]
+}
+
+model LocationRecord {
+  id          String     @id
+  mapId       String
+  title       String
+  category    String
+  region      String
+  description String     @db.Text
+  lat         Float
+  lng         Float
+  wiki        String
+  map         MapRecord  @relation(fields: [mapId], references: [id], onDelete: Cascade)
+  @@index([mapId, category])
+}
+
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  name      String?
+  createdAt DateTime  @default(now())
+  progress  Progress[]
+  notes     Note[]
+  pins      Pin[]
+}
+
+model Progress {
+  id        String   @id @default(cuid())
+  userId    String
+  locationId String
+  foundAt   DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, locationId])
+}
+
+model Note {
+  id         String   @id @default(cuid())
+  userId     String
+  locationId String
+  content    String   @db.Text
+  updatedAt  DateTime @updatedAt
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, locationId])
+}
+
+model Pin {
+  id        String   @id @default(cuid())
+  userId    String
+  mapId     String
+  title     String
+  icon      String
+  color     String
+  lat       Float
+  lng       Float
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

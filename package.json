@@ -1,0 +1,42 @@
+{
+  "name": "skyrim-atlas",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "tsx server/index.ts",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "tsc -b --pretty false"
+  },
+  "dependencies": {
+    "@prisma/client": "latest",
+    "@vitejs/plugin-react": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "leaflet": "latest",
+    "leaflet.markercluster": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-leaflet": "latest",
+    "zustand": "latest"
+  },
+  "devDependencies": {
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/leaflet": "latest",
+    "@types/leaflet.markercluster": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "prisma": "latest",
+    "tailwindcss": "3.4.17",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}

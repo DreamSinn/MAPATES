@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="base" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1a2a35"/><stop offset="1" stop-color="#2c3431"/></linearGradient>
+    <pattern id="ash" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M5 14 14 10M24 34l10-5M4 34l6-2" stroke="#dad09b" stroke-opacity=".1" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#base)"/>
+  <path d="M-40 580c144-135 258-46 358-106s183-123 305-62 177 30 285-47 174-77 332-12v447H-40z" fill="#080f18" fill-opacity=".3"/>
+  <g fill="none" stroke="#d8d2a0" stroke-opacity=".2" stroke-width="2"><path d="M-10 118c185 25 246-68 384 34s215 82 335-6 245-18 503 14"/><path d="M-10 147c185 25 248-62 382 30s217 81 337-8 249-13 503 15"/><path d="M35 621c150-111 241-57 348-97s208-82 315-14 187 40 338-42"/><path d="M66 650c137-105 231-51 333-89s211-79 319-12 192 38 343-39"/></g>
+  <g fill="none" stroke="#8dd4af" stroke-opacity=".55" stroke-width="3" stroke-dasharray="7 13"><path d="M88 650C206 558 214 414 365 355s129-162 262-205 192 9 318-80"/><path d="M153 107c114 72 124 191 232 244s157 160 300 176 213 73 363 142"/></g>
+  <rect width="1200" height="800" fill="url(#ash)"/>
+  <g fill="#e8e0b0" opacity=".48" font-family="Inter,Arial,sans-serif" font-size="13" letter-spacing="3"><text x="94" y="110">NORTH RIDGE</text><text x="432" y="204">ASHSHORE</text><text x="300" y="432">RAVENWATCH</text><text x="755" y="478">BLACKWATER SHELF</text></g>
+  <g fill="#8dd4af" opacity=".75"><circle cx="112" cy="170" r="2"/><circle cx="476" cy="288" r="2"/><circle cx="1012" cy="224" r="2"/><circle cx="1012" cy="704" r="2"/></g>
+  <text x="1130" y="770" text-anchor="end" fill="#8dd4af" opacity=".7" font-family="IBM Plex Mono,monospace" font-size="11" letter-spacing="2">ATLAS / ISLAND BASE 02</text>
+</svg>

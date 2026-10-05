@@ -1,0 +1,1 @@
+O sitemap é válido e usa URLs absolutas com o host `skyrim-atlas.example` como placeholder legal para o ambiente local. Na publicação, substitua esse host pela origem pública real do Skyrim Atlas ou gere o XML dinamicamente no servidor com `PUBLIC_ORIGIN`.
